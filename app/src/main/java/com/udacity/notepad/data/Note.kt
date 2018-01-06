@@ -2,10 +2,11 @@ package com.udacity.notepad.data
 
 import java.util.Date
 
-class Note {
-    var id = -1
-    var text: String? = null
-    var isPinned = false
-    var createdAt = Date()
-    var updatedAt: Date? = null
-}
+// data class provides = identity, hashing, copying
+data class Note(
+        val id: Int = -1,
+        var text: String? = null,
+        var isPinned: Boolean = false,
+        var createdAt: Date = Date(),
+        var updatedAt: Date? = null
+)
