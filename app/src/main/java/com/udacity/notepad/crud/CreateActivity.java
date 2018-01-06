@@ -50,7 +50,7 @@ public class CreateActivity extends AppCompatActivity {
     }
 
     private void save() {
-        DataStore.execute(new Runnable() {
+        DataStore.INSTANCE.execute(new Runnable() {
             @Override
             public void run() {
                 Note note = updateNote();
